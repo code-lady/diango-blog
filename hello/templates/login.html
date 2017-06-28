@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>登录页面</p>
+<form action="/login/" method="post">
+    {% crft_token %}
+    姓名： <input type="text" name="name"> <br>
+{#    密码： <input type="password" name="pwd"> <br>#}
+    <input type="submit" value="提交">
+</form>
+<p>{{ rlt }}</p>
+
+</body>
+</html>

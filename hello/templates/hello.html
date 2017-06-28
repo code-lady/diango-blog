@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>{{me |first|upper}}</p>
+
+{#<form action="/add" method="get">#}
+{#    a: <input type="text" name="a"> <br>#}
+{#    b: <input type="text" name="b"> <br>#}
+{##}
+{#    <input type="submit" value="提交">#}
+{#</form>#}
+    <ul>
+        {% for sport in name %}
+        <li>{{ sport}}</li>
+        {% endfor %}
+       </ul>
+<ul>
+    {% for num in price %}
+        <li>{{ num }}</li>
+    {% endfor %}
+
+
+</ul>
+<ul>
+    <li{{ me}}></li>
+</ul>
+<ul>
+    {% for d in dd %}
+    <li{{ d}}></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
